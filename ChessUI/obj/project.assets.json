@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "ChessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ChessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChessLogic.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ChessLogic/1.0.0": {
+      "type": "project",
+      "path": "../ChessLogic/ChessLogic.csproj",
+      "msbuildProject": "../ChessLogic/ChessLogic.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "ChessLogic >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\agaih\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ASP.NET\\Chess\\ChessLogic\\ChessLogic.csproj": {
+              "projectPath": "D:\\ASP.NET\\Chess\\ChessLogic\\ChessLogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
